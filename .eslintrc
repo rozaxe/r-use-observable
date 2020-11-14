@@ -1,0 +1,80 @@
+{
+	"parser": "@typescript-eslint/parser",
+	"plugins": [
+		"react",
+		"@typescript-eslint"
+	],
+	"parserOptions": {
+		"ecmaVersion": 2018,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"rules": {
+		"semi": [
+			"warn",
+			"never"
+		],
+		"indent": [
+			"error",
+			"tab"
+		],
+		"no-mixed-spaces-and-tabs": [
+			"warn",
+			"smart-tabs"
+		],
+		"array-bracket-spacing": [
+			"warn",
+			"always"
+		],
+		"object-curly-spacing": [
+			"warn",
+			"always"
+		],
+		"jsx-quotes": [
+			"warn",
+			"prefer-single"
+		],
+		"react/jsx-curly-brace-presence": [
+			"warn",
+			"never"
+		],
+		"react/jsx-curly-spacing": [
+			"warn",
+			{
+				"when": "always",
+				"spacing": {
+					"objectLiterals": "never"
+				}
+			}
+		],
+		"react/prop-types": "off",
+		// No prop-types because of TypeScript,
+		"react/prefer-stateless-function": "warn",
+		"@typescript-eslint/explicit-function-return-type": [
+			"warn",
+			{
+				"allowExpressions": true,
+				"allowTypedFunctionExpressions": true
+			}
+		],
+		"@typescript-eslint/member-delimiter-style": [
+			"warn",
+			{
+				"multiline": {
+					"delimiter": "none"
+				},
+				"singleline": {
+					"delimiter": "comma"
+				}
+			}
+		]
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+			// Tells eslint-plugin-react to automatically detect the version of React to use
+		}
+	}
+}
