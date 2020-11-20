@@ -1,6 +1,6 @@
 {
     "name": "r-use-observable",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "source": "src/useObservable.ts",
     "main": "dist/useObservable.js",
     "types": "dist/useObservable.d.ts",
