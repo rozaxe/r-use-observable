@@ -12,7 +12,7 @@
         "lint": "tsc --noEmit && eslint 'src/**/*.ts' --fix",
         "test": "jest"
     },
-    "dependencies": {
+    "peerDependencies": {
         "react": "*",
         "rxjs": "*"
     },
